@@ -4,6 +4,12 @@
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/seaboie/greetings.svg)](https://pkg.go.dev/github.com/seaboie/greetings)  
 
+## on Youtube  
+
+- [Welcome to series on GO programming language](https://www.youtube.com/watch?v=JoJ8Sw5Yb4c&list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOnBpa)  1 / 57  
+
+---  
+## Get Start  
 
 - [Go installation](https://go.dev/doc/install)   
 - [Tutorial: Get started with Go](https://go.dev/doc/tutorial/getting-started)  
