@@ -1,6 +1,12 @@
 # Go  
 
-## [Tutorial: Get started with Go](https://go.dev/doc/tutorial/getting-started)  
+<a href="https://pkg.go.dev/github.com/seaboie/greetings"><img src="https://pkg.go.dev/badge/github.com/seaboie/greetings.svg" alt="Go Reference"></a>  
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/seaboie/greetings.svg)](https://pkg.go.dev/github.com/seaboie/greetings)  
+
+
+- [Go installation](https://go.dev/doc/install)   
+- [Tutorial: Get started with Go](https://go.dev/doc/tutorial/getting-started)  
 
 ```bash
 cd /Users/<your username>/go
@@ -22,7 +28,9 @@ go
 │   ├── go.sum
 │   └── hello.go
 └── README.md
-``` 
+```  
+
+
 ### 1. Enable dependency tracking for your code.  
 Run the `go mod init command`, giving it your module path -- here, use ***example.com/greetings***. If you publish a module, this must be a path from which your module can be downloaded by Go tools. That would be your code's repository. 
 ```bash
@@ -139,6 +147,16 @@ Kept in `/Users/<your-username>/go/bin`
 # In: ~/.zshrc  
 export PATH=$PATH:$(go env GOPATH)/bin
 ```  
+
+### Start the `godoc` server:
+
+- Navigate to your package directory in the terminal and run:
+
+```bash
+ godoc -http=:6060
+ ```  
+ > Open your web browser and go to `http://localhost:6060`. You will see the documentation for your package  
+ > In `Third party` Section   
 
 ## [Developing and publishing modules](https://go.dev/doc/modules/developing)  
 
