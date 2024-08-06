@@ -164,6 +164,37 @@ export PATH=$PATH:$(go env GOPATH)/bin
  > Open your web browser and go to `http://localhost:6060`. You will see the documentation for your package  
  > In `Third party` Section   
 
+ ## [Add a test](https://go.dev/doc/tutorial/add-a-test)   
+ ```bash
+ go test
+ ```   
+
+ ```bash
+ go test -v
+ ```   
+
+ ## [Compile and install the application](https://go.dev/doc/tutorial/compile-install)   
+ - 1. In your app directory, run the go build command to compile the code into an executable   
+ ```bash
+ go build
+ ```  
+
+ - 2. Discover the Go install path  
+ ```bash
+ go list -f '{{.Target}}'
+ ```  
+
+ - 3. Go install  
+ ```bash
+ go install
+ ```  
+
+> If you want to Install specific path  ( on Mac )   
+ ```bash
+go env -w GOBIN=/Users/<user-name>/bin   
+go install
+```  
+
 ## [Developing and publishing modules](https://go.dev/doc/modules/developing)  
 
 
