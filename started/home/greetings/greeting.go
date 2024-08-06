@@ -32,8 +32,8 @@ func Hello(name string) (string, error) {
 	if name == "" {
 		return "", errors.New(randomErrMessageFormat())
 	}
-	// Return a gretting that embeds the name in a message.
-	message := fmt.Sprintf(randomMessageFormat(), name)
+	// message := fmt.Sprintf(randomMessageFormat(), name)
+	message := fmt.Sprint(randomMessageFormat())
 	return message, nil
 }
 
