@@ -8,10 +8,17 @@ func main() {
 	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
 
-	message, err := grettings.Hello("Kribovorn")
+	names := []string{"Gladys", "Samantha", "Darrin", "Kritbovorn"}
+	// names := []string{}
+	messages, err := grettings.Hellos(names)
 
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(message)
+
+	// fmt.Println(messages)
+	for name, message := range messages {
+		fmt.Println("-" , name, ":", message)
+	}
+
 }
